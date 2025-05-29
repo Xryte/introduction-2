@@ -1,13 +1,13 @@
 echo "Репозиторий с ветками" > README.md
 git add README.md
 git commit -m "Добавил README.md"
-git push -u origin main
+git push 
 
 git checkout -b other
 touch other.txt
 git add other.txt
 git commit -m "Добавил файл main.txt на ветку main"
-git push -u origin other
+git push --set-upstream origin other
 
 git checkout main
 touch main.txt
